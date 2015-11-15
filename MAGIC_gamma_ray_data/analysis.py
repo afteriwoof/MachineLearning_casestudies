@@ -1,3 +1,6 @@
+# Case-study on the MAGIC Gamma Telescope Data Set: https://archive.ics.uci.edu/ml/datasets/MAGIC+Gamma+Telescope
+
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
