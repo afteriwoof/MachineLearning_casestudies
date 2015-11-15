@@ -48,3 +48,4 @@ fpr,tpr,thr=roc_curve(y_test_bin,pred_bin)
 roc_auc=auc(fpr,tpr)
 
 plt.plot(fpr, tpr, label='ROC curve (area = %0.2f)' % roc_auc)
+
