@@ -29,6 +29,7 @@ for i in range(0,10):
 	plt.hist(data_g[[i]].values,bins=20,histtype='stepfilled',normed=False,color='b',label='g')
 	plt.hist(data_h[[i]].values,bins=20,histtype='stepfilled',normed=False,color='r',alpha=0.5,label='h')
 	plt.legend()
+	plt.savefig("hist%s.pdf" %i, format="pdf")
 	plt.show()
 
 
@@ -64,5 +65,6 @@ roc_auc=auc(fpr,tpr)
 print(roc_auc)
 plt.plot(fpr, tpr, label='ROC curve (area = %0.2f)' % roc_auc)
 plt.legend()
+plt.savefig("rf_roc.pdf", format="pdf")
 plt.show()
 
