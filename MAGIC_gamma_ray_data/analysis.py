@@ -32,6 +32,11 @@ for i in range(0,10):
 	plt.savefig("hist%s.pdf" %i, format="pdf")
 	plt.show()
 
+# Inspect the correlation matrices
+df.corr()
+data_g.corr()
+data_h.corr()
+
 
 # Random Forest Classifier
 
